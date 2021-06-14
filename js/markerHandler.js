@@ -60,7 +60,7 @@ AFRAME.registerComponent("markerhandler", {
     //Get the dish based on ID
     var dish = dishes.filter(dish => dish.id === markerId)[0];
 
-    //Update UI conent VISIBILITY of AR scene(MODEL , INGREDIENTS & PRICE)
+    //Update UI content VISIBILITY of AR scene(MODEL , INGREDIENTS & PRICE)
     var model = document.querySelector(`#model-${dish.id}`);
     model.setAttribute("visible", true);
 
@@ -169,7 +169,7 @@ AFRAME.registerComponent("markerhandler", {
       });
   },
   handleMarkerLost: function () {
-    //Changing button div visibility
+    // Changing button div visibility
     var buttonDiv = document.getElementById("button-div");
     buttonDiv.style.display = "none";
   }
